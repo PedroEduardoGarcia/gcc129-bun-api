@@ -33,6 +33,15 @@ export class BooksDatabase {
     return this.db.run(`UPDATE books SET name = '${book.name}', author = '${book.author}' WHERE id = ${id}`)
   }
 
+  // Delete a book
+  async deleteBook(id: number) {
+    return this.db.run(`DELETE FROM books WHERE id = ${id}`)
+  }
+
+  async getBook(id: number) {
+    return this.db.query(`SELECT * FROM books WHERE id=${id}`).get() as Book;
+  }
+
   async init() {
     return this.db.run('CREATE TABLE IF NOT EXISTS books (id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT, author TEXT)');
   }
