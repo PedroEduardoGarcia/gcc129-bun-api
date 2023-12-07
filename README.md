@@ -11,7 +11,7 @@ Discente:
 TO-DO: breve descrição do trabalho
 
 
-![]( ~/home/kleberxyz/bb/gcc129-bun-api/bun-image.jpg)
+![BUN](bun-image.jpg)
 
 ## BUN - Business Units Network
 
