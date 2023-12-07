@@ -52,6 +52,18 @@ app.put('/books', ({db, body }) => db.updateBook(body.id, { name: body.name, aut
   })
 });
 
+app.get('/books/:id', async ({db, params, jwt, cookie: {auth} }) => {
+
+  const profile =  await jwt.verify(auth);
+
+  if (!profile) throw new Unauthorized();
+
+
+  return db.getBook(parseInt(params.id))
+});
+
+app.delete('/books/:id', ({db, params }) => db.deleteBook(parseInt(params.id)));
+
 app.listen(8000);
 
 console.log(
