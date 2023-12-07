@@ -49,6 +49,11 @@ Elysia é capaz de ter desempenho superior em diversas situações, sendo um dos
 - [Bun](https://bun.sh/)
 - [Git](https://git-scm.com/)
 
+## Tecnologias utilizadas
+- Bun
+- Elysia
+- Sqlite
+
 ## Bun API para livros
 
 ### Servidor de Desenvolvimento
