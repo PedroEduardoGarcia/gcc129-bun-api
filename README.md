@@ -41,6 +41,13 @@ Bun é projetado como uma substituição direta para o Node.js. Ele implementa n
 
 O objetivo do Bun é executar a maioria do JavaScript do lado do servidor do mundo e fornecer ferramentas para melhorar o desempenho, reduzir a complexidade e aumentar a produtividade do desenvolvedor.
 
+# Elysia
+
+Elysia é capaz de ter desempenho superior em diversas situações, sendo um dos frameworks TypeScript de melhor desempenho.
+
+## Pré-requisitos
+- [Bun](https://bun.sh/)
+- [Git](https://git-scm.com/)
 
 ## Bun API para livros
 
