@@ -27,27 +27,20 @@ A API oferece operações básicas de CRUD (Create, Read, Update, Delete) para m
 De forma geral, o sistema permite uma interação eficiente e consistente com a base de dados de livros por meio de requisições à API, seguindo os princípios do CRUD. Isso proporciona uma maneira padronizada e escalável de gerenciar as informações relacionadas aos livros, tornando o processo mais acessível e flexível.
 
 
-## BUN - Business Units Network
+# Bun - Uma Nova Plataforma JavaScript
 
-O BUN (Business Units Network) é uma API que possibilita a criação de um modelo de negócio compartilhado, gerando uma API funcional e uma documentação de referência para os usuários finais. Isso promove a interoperabilidade entre diferentes sistemas.
+Bun é uma nova runtime JavaScript construída do zero para atender ao ecossistema moderno do JavaScript. Ela possui três metas de design principais:
 
-### Objetivo
+- **Velocidade:** Bun inicia rapidamente e executa de maneira eficiente. Ele estende o JavaScriptCore, o motor JS voltado para o desempenho construído para o Safari e é até 29x mais rápida que o Node.js.
 
-A API BUN foi desenvolvida com o intuito de facilitar a comunicação entre as diversas unidades de negócio da empresa, permitindo que os diferentes componentes do sistema atuem como um só. Isso unifica as equipes e suas demandas, proporcionando uma abordagem mais integrada.
+- **APIs Elegantes:** Bun oferece um conjunto mínimo de APIs altamente otimizadas para realizar tarefas comuns, como iniciar um servidor HTTP e escrever arquivos.
 
-### Benefícios
+- **Experiência de Desenvolvimento Coesa:** Bun é um conjunto completo de ferramentas para construir aplicativos JavaScript, incluindo um gerenciador de pacotes, executor de testes e empacotador.
 
-A API BUN oferece vários benefícios, incluindo:
+Bun é projetado como uma substituição direta para o Node.js. Ele implementa nativamente centenas de APIs do Node.js e da Web, incluindo fs, path, Buffer e muito mais.
 
-- **Centralização da comunicação entre as unidades de negócio**
-- **Reutilização da lógica de negócio existente**
-- **Capacidade de mapear APIs de negócios específicos para diferentes sistemas**
+O objetivo do Bun é executar a maioria do JavaScript do lado do servidor do mundo e fornecer ferramentas para melhorar o desempenho, reduzir a complexidade e aumentar a produtividade do desenvolvedor.
 
-Além disso, a API BUN também disponibiliza recursos para o gerenciamento de APIs, como documentação, testes e licenças.
-
-### Resumo
-
-Em resumo, a API BUN é uma ferramenta poderosa que facilita a criação de um modelo de negócio compartilhado. Isso promove a comunicação entre as unidades de negócio e impulsiona a interoperabilidade entre diferentes sistemas.
 
 ## Bun API para livros
 
