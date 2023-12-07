@@ -37,7 +37,23 @@ const app = new Elysia().use(swagger()).addError({
 
 app.get('/books', ({db}) => db.getBooks());
 
+app.post('/books', ({db, body}) => db.addBook(body), {
+  body: t.Object({
+    name: t.String(),
+    author: t.String()
+  })
+})
+
+app.put('/books', ({db, body }) => db.updateBook(body.id, { name: body.name, author: body.author}), {
+  body: t.Object({
+    id: t.Number(),
+    name: t.String(),
+    author: t.String()
+  })
+});
+
 app.listen(8000);
+
 console.log(
   `🦊 Elysia is running at ${app.server?.hostname}:${app.server?.port}`
 );
