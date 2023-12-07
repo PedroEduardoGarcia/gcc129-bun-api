@@ -1,7 +1,43 @@
-import { Elysia } from "elysia";
+import { Elysia, t } from "elysia";
+import { cookie } from "@elysiajs/cookie";
+import { swagger } from "@elysiajs/swagger";
+import { jwt } from "@elysiajs/jwt";
+import { BooksDatabase } from './db';
+class Unauthorized extends Error {
+  constructor(){
+    super('Unauthorized');
+  }
+}
 
-const app = new Elysia().get("/", () => "Hello Elysia").listen(3000);
+const app = new Elysia().use(swagger()).addError({
+  '401': Unauthorized
+}).onError(({ code, error}) => {
 
+  let status;
+
+  switch (true) {
+    case code === 'VALIDATION':
+      status = 400;
+      break;
+    case code === 'NOT_FOUND':
+      status = 404;
+      break;
+    case code === '401':
+      status = 401;
+      break;
+    default:
+      status = 500;
+  }
+
+  return new Response(error.toString(), {status: status})
+}).use(cookie()).use(jwt({
+  name: 'jwt',
+  secret: 'supersecret'
+})).decorate('db', new BooksDatabase());
+
+app.get('/books', ({db}) => db.getBooks());
+
+app.listen(8000);
 console.log(
   `🦊 Elysia is running at ${app.server?.hostname}:${app.server?.port}`
 );
