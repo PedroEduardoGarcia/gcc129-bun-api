@@ -10,6 +10,9 @@ Discente:
 
 TO-DO: breve descrição do trabalho
 
+
+![]( ~/home/kleberxyz/bb/gcc129-bun-api/bun-image.jpg)
+
 ## BUN - Business Units Network
 
 O BUN (Business Units Network) é uma API que possibilita a criação de um modelo de negócio compartilhado, gerando uma API funcional e uma documentação de referência para os usuários finais. Isso promove a interoperabilidade entre diferentes sistemas.
