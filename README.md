@@ -5,12 +5,26 @@
 Docentes:
 - Pedro Eduardo Garcia
 - Kleber Halley Sallum Guimarães
-- xx
+- Isaías Gonçalves Ribeiro
 
 Discente:
 - André De Lima Salgado
 
-TO-DO: breve descrição do trabalho
+## Resumo
+
+O projeto consiste na criação de um sistema de gerenciamento de livros por meio de uma API (Interface de Programação de Aplicações). Utilizamos dois frameworks principais, o "Bun" e o "Elysia.js", para facilitar o desenvolvimento e a implementação das funcionalidades do sistema.
+
+A API oferece operações básicas de CRUD (Create, Read, Update, Delete) para manipular informações relacionadas a livros. Isso significa que o sistema permite:
+
+1. **Inserir Livros:** Adicionar novos livros à base de dados por meio de requisições à API. Essa funcionalidade envolve o fornecimento das informações necessárias para criar um novo registro de livro.
+
+2. **Editar Livros:** Atualizar as informações de livros existentes. Isso pode incluir a modificação de detalhes como título, autor, ano de publicação, entre outros.
+
+3. **Visualizar Livros:** Obter informações sobre os livros armazenados na base de dados. Isso pode ser feito para recuperar detalhes específicos de um livro ou para listar todos os livros disponíveis.
+
+4. **Excluir Livros:** Remover livros da base de dados. Essa operação envolve a identificação do livro a ser excluído por meio de uma solicitação à API.
+
+De forma geral, o sistema permite uma interação eficiente e consistente com a base de dados de livros por meio de requisições à API, seguindo os princípios do CRUD. Isso proporciona uma maneira padronizada e escalável de gerenciar as informações relacionadas aos livros, tornando o processo mais acessível e flexível.
 
 
 ## BUN - Business Units Network
@@ -35,9 +49,18 @@ Além disso, a API BUN também disponibiliza recursos para o gerenciamento de AP
 
 Em resumo, a API BUN é uma ferramenta poderosa que facilita a criação de um modelo de negócio compartilhado. Isso promove a comunicação entre as unidades de negócio e impulsiona a interoperabilidade entre diferentes sistemas.
 
-## Bun API para filmes
+## Bun API para livros
 
 ### Servidor de Desenvolvimento
+Primeiro faça download do repositório, você pode rodar isso no seu terminal:
+```bash
+git clone https://github.com/PedroEduardoGarcia/gcc129-bun-api.git
+```
+
+Após o download do repositório, acessa a pasta do projeto e instale as dependências:
+```bash
+bun install
+```
 
 Para iniciar o servidor de desenvolvimento rode:
 ```bash
