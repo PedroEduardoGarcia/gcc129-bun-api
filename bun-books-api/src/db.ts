@@ -22,6 +22,17 @@ export class BooksDatabase {
     return this.db.query('SELECT * FROM books').all();
   }
 
+  // Add a book
+  async addBook(book: Book) {
+    // q: Get id type safely
+    return this.db.query(`INSERT INTO books (name, author) VALUES (?, ?) RETURNING id`).get(book.name, book.author) as Book;
+  }
+
+  // Update a book
+  async updateBook(id: number, book: Book) {
+    return this.db.run(`UPDATE books SET name = '${book.name}', author = '${book.author}' WHERE id = ${id}`)
+  }
+
   async init() {
     return this.db.run('CREATE TABLE IF NOT EXISTS books (id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT, author TEXT)');
   }
