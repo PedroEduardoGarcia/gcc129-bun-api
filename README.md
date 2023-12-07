@@ -31,16 +31,6 @@ A API BUN oferece vários benefícios, incluindo:
 
 Além disso, a API BUN também disponibiliza recursos para o gerenciamento de APIs, como documentação, testes e licenças.
 
-### Como Utilizar
-
-Para criar um modelo de negócio com a API BUN, siga os seguintes passos:
-
-1. Crie um projeto
-2. Defina recursos e aplicativos
-3. Configure permissões e licenças
-
-A API BUN também permite a geração de documentação de referência para os usuários finais, facilitando a compreensão e o uso da API.
-
 ### Resumo
 
 Em resumo, a API BUN é uma ferramenta poderosa que facilita a criação de um modelo de negócio compartilhado. Isso promove a comunicação entre as unidades de negócio e impulsiona a interoperabilidade entre diferentes sistemas.
