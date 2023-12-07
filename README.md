@@ -1,17 +1,17 @@
-# Trabalho final de Distemas de Distribuídos, UFLA
+# Trabalho Final de Sistemas de Distribuídos - UFLA
+
+![BUN](bun-image.jpg)
 
 Docentes:
 - Pedro Eduardo Garcia
-- xx
+- Kleber Halley Sallum Guimarães
 - xx
 
 Discente:
-- XX
+- André De Lima Salgado
 
 TO-DO: breve descrição do trabalho
 
-
-![BUN](bun-image.jpg)
 
 ## BUN - Business Units Network
 
