@@ -299,3 +299,27 @@ console.log(
 ```
 
 Dessa forma podemos acessar a API em: http://localhost:8081/swagger
+
+### Arquitetura
+
+Em nosso sistema distribuído, desenvolvemos uma arquitetura que integra uma API e um banco de dados em uma mesma máquina. Abaixo, fornecerei uma descrição detalhada da arquitetura do sistema:
+
+1. **Monolito Local:**
+   - **API (Backend):** A aplicação é estruturada como um monolito, onde a lógica de negócios, manipulação de dados e a interface de programação de aplicativos (API) estão contidas em um único serviço.
+   - **Banco de Dados:** O banco de dados está hospedado localmente na mesma máquina em que a API é executada. Isso simplifica a comunicação entre a API e o banco de dados, reduzindo a latência e aproveitando a alta velocidade de acesso aos dados locais.
+
+2. **Comunicação Interna:**
+   - **Comunicação Direta:** A comunicação entre a API e o banco de dados ocorre internamente na máquina, evitando a necessidade de comunicação através de redes externas. Isso contribui para um desempenho mais rápido, pois não há latência significativa associada à transmissão de dados pela rede.
+
+3. **Vantagens da Abordagem:**
+   - **Simplicidade:** A arquitetura monolítica simplifica o desenvolvimento e a manutenção, pois todas as partes do sistema estão contidas em uma única unidade.
+   - **Desempenho Local:** Ao ter o banco de dados e a API na mesma máquina, aproveitamos a comunicação de alta velocidade e reduzimos a dependência de redes externas.
+   - **Facilidade de Implantação:** A implantação do sistema é facilitada, pois todas as partes estão consolidadas em um único ambiente.
+
+4. **Desafios Potenciais:**
+   - **Escala Limitada:** A escalabilidade pode ser limitada devido à abordagem monolítica. Caso seja necessário escalar componentes independentemente, seria necessário considerar uma arquitetura mais distribuída.
+
+5. **Melhorias Futuras:**
+   - **Microsserviços:** Se a necessidade de escalabilidade ou flexibilidade surgir no futuro, poderíamos considerar a transição para uma arquitetura de microsserviços, onde cada componente (API, banco de dados) é separado e pode ser dimensionado independentemente.
+
+Em resumo, nossa arquitetura atual visa a simplicidade e o desempenho, aproveitando a comunicação interna eficiente entre a API e o banco de dados em uma única máquina. Contudo, estamos cientes de possíveis desafios futuros e estamos abertos a considerar abordagens mais distribuídas conforme necessário.
