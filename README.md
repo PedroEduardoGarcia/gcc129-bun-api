@@ -31,7 +31,7 @@ De forma geral, o sistema permite uma interação eficiente e consistente com a 
 
 Bun é uma nova runtime JavaScript construída do zero para atender ao ecossistema moderno do JavaScript. Ela possui três metas de design principais:
 
-- **Velocidade:** Bun inicia rapidamente e executa de maneira eficiente. Ele estende o JavaScriptCore, o motor JS voltado para o desempenho construído para o Safari e é até 29x mais rápida que o Node.js.
+- **Velocidade:** Bun inicia rapidamente e executa de maneira eficiente. Ele estende o JavaScriptCore, o motor JS voltado para o desempenho construído para o Safari e é até 29x mais rápida que o Node.js.;
 
 - **APIs Elegantes:** Bun oferece um conjunto mínimo de APIs altamente otimizadas para realizar tarefas comuns, como iniciar um servidor HTTP e escrever arquivos.
 
